@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 import { Routes, Route, useNavigate } from "react-router-dom"
 import { useEffect, useContext, useState } from "react";
 import { LoginContext } from "./components/ContextProvider/Context";
+import BackgroundAnimate from "./components/BackgroundAnimate";
 
 
 function App() {
@@ -44,10 +45,10 @@ function App() {
   }
 
   useEffect(() => {
-    setTimeout(()=>{
+    setTimeout(() => {
       DashboardValid();
       setData(true)
-    },2000)
+    }, 2000)
 
   }, [])
 
