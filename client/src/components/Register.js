@@ -71,7 +71,7 @@ const Register = () => {
             // console.log("user registration succesfully done");
 
 
-            const data = await fetch("/register", {
+            const data = await fetch("https://url-shorten-forgot-pass.onrender.com/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

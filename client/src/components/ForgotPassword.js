@@ -17,7 +17,7 @@ const ForgotPassword = () => {
     const [message, setMessage] = useState("");
 
     const userValid = async () => {
-        const res = await fetch(`/forgotpassword/${id}/${token}`, {
+        const res = await fetch(`https://url-shorten-forgot-pass.onrender.com/forgotpassword/${id}/${token}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -64,7 +64,7 @@ const ForgotPassword = () => {
                 setPassword("")
                 setMessage(true)
             } else {
-                toast.error("! Token Expired generate new LInk",{
+                toast.error("! Token Expired generate new LInk", {
                     position: "top-center"
                 })
             }
